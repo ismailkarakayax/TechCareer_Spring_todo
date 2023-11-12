@@ -1,0 +1,101 @@
+/* main.css */
+
+/* Genel sayfa düzeni */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Sayfa arka plan rengi */
+  }
+  
+  /* Başlık */
+  .display-3 {
+    color: #000000; /* Mavi renk */
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  /* Form ve buton düzenleme */
+  .form-button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px; /* Kutucuk içindeki içeriği çevreleme */
+    border: 1px solid #ced4da; /* Kutucuk çerçeve rengi */
+    background-color: #fff; /* Kutucuk arka plan rengi */
+    border-radius: 8px; /* Kutucuk köşe yuvarlama */
+  }
+  .table-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px; /* Kutucuk içindeki içeriği çevreleme */
+    border: 1px solid #ced4da; /* Kutucuk çerçeve rengi */
+    background-color: #fff; /* Kutucuk arka plan rengi */
+    border-radius: 8px; /* Kutucuk köşe yuvarlama */
+  }  
+  
+  .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .form-control {
+    width: 100%; /* Enine maksimum genişlik */
+    padding: 10px;
+    border: 1px solid #ced4da; /* Gri tonunda çerçeve rengi */
+  }
+  
+  .btn-primary {
+    background-color: #192c33; /* Gri tonunda buton renk */
+    color: #fff; /* Beyaz metin rengi */
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Enine maksimum genişlik */
+    margin: 1px;
+  }
+
+  .button-group {
+    display: flex;
+    width: 100%;
+  }
+  
+  
+  /* Tablo düzenleme */
+  .table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Hafif gölgelendirme */
+  }
+  
+  .table th, .table td {
+    padding: 12px;
+    border: 1px solid #ddd; /* Gri tonunda hücre çerçeve rengi */
+  }
+  
+  .table th {
+    background-color: #000000; /* Gri tonunda başlık renk */
+    color: #fff; /* Beyaz metin rengi */
+    font-size: 16px;
+  }
+  
+  /* Bağlantılar ve simgeler */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .fa-pen-to-square, .fa-trash {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 5px;
+  }
+  
+  .fa-trash {
+    color: #dc3545; /* Kırmızı renk */
+  }

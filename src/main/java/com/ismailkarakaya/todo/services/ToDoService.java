@@ -41,5 +41,10 @@ public class ToDoService {
     public void deleteToDo(Long id) {
         toDoRepository.deleteById(id);
     }
+
+
+    public List<ToDo> getCompletedTodos(boolean completed){
+        return toDoRepository.findAllByCompleted(completed);
+    }
 }
 

@@ -1,5 +1,6 @@
 package com.ismailkarakaya.todo.controller;
 
+import com.ismailkarakaya.todo.assist.FrontEnd;
 import com.ismailkarakaya.todo.data.entity.ToDo;
 import com.ismailkarakaya.todo.services.ToDoService;
 import jakarta.validation.Valid;
@@ -11,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/todos")
+@CrossOrigin(origins = FrontEnd.REACT_URL)
 public class ToDoController {
     private final ToDoService toDoService;
 
@@ -44,6 +46,27 @@ public class ToDoController {
     public void deleteToDo(@PathVariable Long id){
         toDoService.deleteToDo(id);
     }
+
+    @DeleteMapping("/deletecompleted")
+    public String deleteCompleted() {
+        List<ToDo> completedItems = toDoService.getCompletedTodos(true);
+        for (ToDo item : completedItems) {
+            toDoService.deleteToDo(item.getId());
+        }
+        return "redirect:/todo";
+    }
+
+    @GetMapping("/completed")
+    public List<ToDo> getAllCompletedToDos(){
+        return toDoService.getCompletedTodos(true);
+    }
+
+    @GetMapping("/undone")
+    public List<ToDo> getUnDoneTados(){
+        return toDoService.getCompletedTodos(false);
+    }
+
+
 
 
 
