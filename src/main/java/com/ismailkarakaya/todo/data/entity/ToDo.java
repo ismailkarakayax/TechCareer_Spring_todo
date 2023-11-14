@@ -2,8 +2,6 @@ package com.ismailkarakaya.todo.data.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 @Data
 @Entity

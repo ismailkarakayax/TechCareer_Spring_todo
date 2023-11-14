@@ -9,7 +9,6 @@ import java.util.List;
 @Repository
 public interface ToDoRepository extends JpaRepository<ToDo,Long> {
 
-
     List<ToDo> findAllByCompleted(boolean completed);
 
 }

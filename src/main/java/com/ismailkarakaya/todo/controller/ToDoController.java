@@ -4,10 +4,7 @@ import com.ismailkarakaya.todo.assist.FrontEnd;
 import com.ismailkarakaya.todo.data.entity.ToDo;
 import com.ismailkarakaya.todo.services.ToDoService;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotNull;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -15,7 +12,6 @@ import java.util.List;
 @CrossOrigin(origins = FrontEnd.REACT_URL)
 public class ToDoController {
     private final ToDoService toDoService;
-
 
     public ToDoController(ToDoService toDoService) {
         this.toDoService = toDoService;
