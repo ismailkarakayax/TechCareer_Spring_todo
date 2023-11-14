@@ -10,7 +10,6 @@
 
 ## Technology
 
-
 ### Backend
 * javase
 * jdbc crud native
