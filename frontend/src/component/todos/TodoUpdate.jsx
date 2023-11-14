@@ -53,9 +53,9 @@ function TodoUpdate() {
   };
 
   return (
-    <div>
+    <div className='form-button-group'>
       <h1>Update Todo</h1>
-      <div>
+      <div className='form-group'>
         <label>Task:</label>
         <input
           type="text"
@@ -65,14 +65,11 @@ function TodoUpdate() {
           onChange={handleTaskChange}
         />
       </div>
-      <div>
-        <label>Completed:</label>
-        <input
-          type="checkbox"
-          checked={completed}
-          onChange={() => handleCompletedChange(!completed)}
-        />
+      <div class="custom-checkbox">
+        <input type="checkbox" id="completedCheckbox" checked={completed} onChange={() => handleCompletedChange(!completed)} />
+        <label for="completedCheckbox">Completed</label>
       </div>
+
       <button
         onClick={handleSubmit}
         className="btn btn-primary"

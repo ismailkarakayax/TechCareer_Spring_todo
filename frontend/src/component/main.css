@@ -3,7 +3,7 @@
 /* Genel sayfa düzeni */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa; /* Sayfa arka plan rengi */
+    background-color: #828d99; /* Sayfa arka plan rengi */
   }
   
   /* Başlık */
@@ -36,7 +36,33 @@ body {
     background-color: #fff; /* Kutucuk arka plan rengi */
     border-radius: 8px; /* Kutucuk köşe yuvarlama */
   }  
+ 
   
+  .custom-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #3498db; /* checkbox border color */
+    border-radius: 4px; /* rounded corners */
+    outline: none;
+    margin-right: 5px;
+}
+
+.custom-checkbox input:checked {
+    background-color: #3498db; /* background color when checked */
+}
+
+.custom-checkbox label {
+    font-size: 16px;
+    color: #333; /* label text color */
+}
   .form-group {
     margin-bottom: 15px;
     width: 100%;
@@ -70,7 +96,7 @@ body {
     width: 100%;
     margin: 20px auto;
     border-collapse: collapse;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Hafif gölgelendirme */
+    
   }
   
   .table th, .table td {
@@ -79,7 +105,7 @@ body {
   }
   
   .table th {
-    background-color: #000000; /* Gri tonunda başlık renk */
+    background-color: #192c33; /* Gri tonunda başlık renk */
     color: #fff; /* Beyaz metin rengi */
     font-size: 16px;
   }

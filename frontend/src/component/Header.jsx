@@ -5,6 +5,7 @@ import React, { Component } from 'react'
 // I18N
 import { withTranslation } from 'react-i18next';
 import { Link, useNavigate  } from 'react-router-dom';
+import './main.css';
 
 // CLASS COMPONENT
 class Header extends Component {
